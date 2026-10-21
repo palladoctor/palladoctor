@@ -207,21 +207,8 @@
     .nav,main,footer{position:relative;z-index:1}
     .nav{position:sticky}
 
-    /* floating WhatsApp */
-    .wa{position:fixed;right:20px;bottom:24px;z-index:9000;width:58px;height:58px;border-radius:50%;display:flex;align-items:center;justify-content:center;background:#25D366;color:#fff;font-size:28px;text-decoration:none;box-shadow:0 8px 22px rgba(0,0,0,.4);transition:transform .25s}
-    .wa:hover{transform:scale(1.1) rotate(-6deg)}
-    .wa::after{content:'';position:absolute;inset:0;border-radius:50%;border:2px solid #25D366;animation:ping 2.4s ease-out infinite}
-    @keyframes ping{from{transform:scale(1);opacity:.7}to{transform:scale(1.7);opacity:0}}
-
-    @media (max-width:900px){
-      .t3.main{right:-18vw;top:30%}.t3.main i{opacity:.22}
-      .t3.ghost,.t3.micro{display:none}
-    }
-    @media (prefers-reduced-motion:reduce){
-      .t3 i,#stage::before,.orb,.gold,.wa::after{animation:none!important}
-      .js .rv{opacity:1;transform:none;transition:none}
-    }
-  </style>
+    
+  
 </head>
 <body>
 <div id="progress"></div>
